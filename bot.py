@@ -7,7 +7,6 @@ import json
 from dotenv import load_dotenv
 import asyncio
 import typing
-from keep_alive import keep_alive
 
 load_dotenv()
 DISCORD_BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
@@ -308,7 +307,6 @@ async def help(interaction: discord.Interaction):
 
 # إضافة مجموعة الأوامر للبوت
 bot.tree.add_command(ptero)
-keep_alive()
 
 
 @bot.event
